@@ -1,4 +1,4 @@
-import Fullcard from "@/components/public/Fullcards";
+import Card from "./Cards";
 
 export default function Homecards() {
   const cardsData = [
@@ -68,9 +68,9 @@ export default function Homecards() {
   ];
 
   return (
-    <div className="w-screen h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+    <div className="w-screen h-screen flex flex-wrap z-10">
       {cardsData.map((card, index) => (
-        <Fullcard
+        <Card
           key={index}
           grayscaleImage={card.grayscaleImage}
           colorImage={card.colorImage}
