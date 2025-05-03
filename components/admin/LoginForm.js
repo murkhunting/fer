@@ -2,7 +2,7 @@ export default function LoginForm({ handleLogin }) {
   return (
     <form
       action={handleLogin}
-      className=" shadow-lg glass text-white px-12 py-18 space-y-4"
+      className=" shadow-lg bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] text-white px-12 py-18 space-y-4"
     >
       <div>
         <input
@@ -10,7 +10,7 @@ export default function LoginForm({ handleLogin }) {
           type="text"
           placeholder="Usuario"
           required
-          className="w-full py-4 px-8 glass rounded-4xl"
+          className="w-full py-4 px-8 bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] rounded-4xl"
         />
       </div>
       <div>
@@ -19,12 +19,12 @@ export default function LoginForm({ handleLogin }) {
           type="password"
           required
           placeholder="Contraseña"
-          className="w-full py-4 px-8 glass rounded-4xl"
+          className="w-full py-4 px-8 bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] rounded-4xl"
         />
       </div>
       <button
         type="submit"
-        className="w-full glass text-white mt-4 p-4 cursor-pointer hover:bg-white hover:text-zinc-600"
+        className="w-full bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] text-white mt-4 p-4 cursor-pointer hover:bg-white hover:text-zinc-600"
       >
         Acceder
       </button>

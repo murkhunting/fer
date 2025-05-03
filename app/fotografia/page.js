@@ -4,7 +4,7 @@ import cardsData from "@/Data/cardsData";
 export default function Fotografia() {
   return (
     <div>
-      <h2 className="fixed h-[48px] px-4 glass top-5 right-20 z-30 flex items-center justify-center">
+      <h2 className="fixed h-[48px] px-4 bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] top-5 right-20 z-30 flex items-center justify-center">
         FOTOGRAFÍA
       </h2>
       <div className="w-screen">
