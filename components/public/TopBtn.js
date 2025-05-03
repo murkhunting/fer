@@ -23,7 +23,7 @@ export default function ScrollButton() {
   return (
     <button
       onClick={handleClick}
-      className="fixed right-6 bottom-6 z-50 w-8 h-8 cursor-pointer bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] hover:bg-black/90 transition-all duration-300 flex items-center justify-center shadow-lg"
+      className="fixed right-6 bottom-6 z-50 w-8 h-8 cursor-pointer bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] hover:bg-black/90 transition-all duration-300 flex items-center justify-center"
       aria-label={showUpArrow ? "Volver arriba" : "Desplazarse hacia abajo"}
     >
       {showUpArrow ? (

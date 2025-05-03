@@ -77,7 +77,7 @@ const cardsData = [
     colorImage:
       "https://images.pexels.com/photos/14541415/pexels-photo-14541415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Foto 10",
-    projectName: "Prueva",
+    projectName: "Prueba",
   },
   {
     grayscaleImage:
@@ -85,7 +85,7 @@ const cardsData = [
     colorImage:
       "https://images.pexels.com/photos/19984903/pexels-photo-19984903/free-photo-of-el-oceano-azul.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Foto 11",
-    projectName: "Prueva",
+    projectName: "Prueba",
   },
   {
     grayscaleImage:

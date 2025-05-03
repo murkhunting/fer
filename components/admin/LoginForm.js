@@ -2,7 +2,7 @@ export default function LoginForm({ handleLogin }) {
   return (
     <form
       action={handleLogin}
-      className=" shadow-lg bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] text-white px-12 py-18 space-y-4"
+      className="bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] text-white px-12 py-18 space-y-4"
     >
       <div>
         <input
