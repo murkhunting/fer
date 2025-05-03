@@ -1,6 +1,6 @@
-"use client"; // Necesario para usar estados y efectos en Next.js 13+
-
+"use client";
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -8,27 +8,39 @@ export default function Header() {
 
   return (
     <>
-      {/* Header fijo con logo */}
+      {/* Header fijo con botón de menú */}
       <header className="fixed top-0 right-0 z-50">
         <div
-          className="relative m-5 p-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg hover:bg-white/20 transition-all cursor-pointer"
+          className="relative m-5 p-2 glass transition-all cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <div className="w-10 h-10 flex items-center justify-center">
-            <span className="text-white font-bold text-xl">LOGO</span>
+          {/* Imagen del ícono de menú */}
+          <div className="w-8 h-8 relative">
+            <Image
+              src="/menu.png" // Ruta desde la carpeta public
+              alt="Menú"
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
       </header>
 
-      {/* Menú desplegable */}
+      {/* Menú desplegable con animación vertical */}
       <div
-        className={`fixed top-0 left-0 w-screen h-screen bg-black/70 backdrop-blur-md z-40 transition-all duration-500 ease-in-out ${
-          isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`fixed top-0 left-0 w-screen h-screen glass z-40 transition-all duration-700 ease-in-out ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-[120vh]"
         }`}
       >
         <div className="h-full flex flex-col items-center justify-center gap-8">
+          <Link
+            href="/"
+            className="text-white text-4xl font-light hover:text-gray-300 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            HOME
+          </Link>
           {[
-            "HOME",
             "VIDEOS",
             "FOTOGRAFÍA",
             "ARQUITECTURA",

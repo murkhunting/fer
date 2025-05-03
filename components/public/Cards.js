@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function Card({ grayscaleImage, colorImage, alt }) {
+export default function Card({ grayscaleImage, colorImage, alt, projectName }) {
   return (
-    <div className="w-[33.3333vw] h-[50vh] relative overflow-hidden group">
+    <div className="w-[33.3333vw] h-[50vh] relative group">
       {/* Imagen en blanco y negro */}
       <Image
         src={grayscaleImage}
@@ -11,12 +11,20 @@ export default function Card({ grayscaleImage, colorImage, alt }) {
         className="object-cover grayscale transition-opacity duration-0 group-hover:opacity-0"
       />
       {/* Imagen en color (debajo, aparece en hover) */}
-      <Image
-        src={colorImage}
-        alt={alt}
-        fill
-        className="object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-0 absolute top-0 left-0"
-      />
+      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-0">
+        <h3
+          className="text-white absolute z-4 top-3 left-3 p-2 bg-white/20 
+                    backdrop-blur-lg "
+        >
+          {projectName}
+        </h3>
+        <Image
+          src={colorImage}
+          alt={alt}
+          fill
+          className="object-cover  absolute top-0 left-0 z-2"
+        />
+      </div>
     </div>
   );
 }
