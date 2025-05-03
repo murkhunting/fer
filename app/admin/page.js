@@ -19,7 +19,7 @@ export default async function AdminPage({ searchParams }) {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-cover bg-[url('https://images.pexels.com/photos/14011476/pexels-photo-14011476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] p-4">
+      <div className="min-h-screen flex items-center justify-center p-4">
         <div></div>
         <div className="w-full max-w-sm mb-12 space-y-4">
           {loginError && (

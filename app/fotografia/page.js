@@ -1,11 +1,11 @@
 import Fullcard from "@/components/public/Fullcards";
 import cardsData from "@/Data/cardsData";
 
-export default function Videos() {
+export default function Fotografia() {
   return (
     <div>
       <h2 className="fixed h-[48px] px-4 glass top-5 right-20 z-30 flex items-center justify-center">
-        VIDEOS
+        FOTOGRAFÍA
       </h2>
       <div className="w-screen">
         {cardsData.map((card, index) => (
