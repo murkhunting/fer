@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/public/Header";
-import Footer from "@/components/public/Footer";
 import BgVideo from "@/components/public/BgVideo";
 import TopBtn from "@/components/public/TopBtn";
 
@@ -30,7 +29,6 @@ export default function RootLayout({ children }) {
         <BgVideo />
         <TopBtn />
         <main className="flex-grow">{children}</main>
-        <Footer />
       </body>
     </html>
   );

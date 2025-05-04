@@ -45,8 +45,8 @@ export default function Header() {
             "FOTOGRAFÍA",
             "ARQUITECTURA",
             "ABOUT",
-            "CONTACTO",
             "FAQS",
+            "CONTACTO",
           ].map((item) => (
             <Link
               key={item}

@@ -3,7 +3,7 @@ import cardsData from "@/Data/cardsData";
 
 export default function Homecards() {
   return (
-    <div className="w-screen relative flex flex-wrap z-10">
+    <div className="w-screen h-screen sticky top-0 overflow-hidden flex flex-wrap z-10 snap-start">
       {cardsData.map((card, index) => (
         <Card
           key={index}

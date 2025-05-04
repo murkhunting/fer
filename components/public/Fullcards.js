@@ -7,7 +7,7 @@ export default function Fullcard({
   projectName,
 }) {
   return (
-    <div className="w-screen h-screen overflow-hidden snap-start group ">
+    <div className="w-screen h-screen sticky top-0 overflow-hidden snap-start group ">
       {/* Imagen en blanco y negro */}
       <Image
         src={grayscaleImage}
@@ -17,7 +17,7 @@ export default function Fullcard({
       />
       {/* Imagen en color (debajo, aparece en hover) */}
       <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-0">
-        <h2 className="absolute text-white top-50 left-50 z-4">
+        <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-8xl z-4">
           {projectName}
         </h2>
         <Image
