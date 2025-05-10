@@ -12,7 +12,7 @@ const projectSchema = new mongoose.Schema({
   },
   projectType: {
     type: String,
-    enum: ["video", "photo"],
+    enum: ["video", "photo", "video y foto"],
     required: true,
   },
   location: {
