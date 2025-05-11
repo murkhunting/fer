@@ -13,7 +13,7 @@ export default function Contacto() {
       <div className="w-screen h-screen flex flex-col justify-center items-center">
         <div className="h-[100vh] sticky pt-10 pb-50 top-0 flex flex-col justify-center items-center text-white">
           <h2 className="text-[30px] font-extralight">
-            ¿Tienes una proyecto en mente?
+            ¿Tienes un proyecto en mente?
           </h2>
           <h2 className="text-[60px] font-extralight">¡PONTE EN CONTACTO!</h2>
           <div className="flex fle-row items-center justify-center gap-10 mt-14">
