@@ -4,9 +4,23 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full h-[50vh] bg-[rgba(247, 247, 247, 0)]/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px]">
-      <div className="container mx-auto px-4 h-full flex items-center justify-center">
-        <p className="text-white">FOOTER</p>
+    <footer className="relative w-screen h-[50vh] bg-[rgba(247, 247, 247, 0)]/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] flex flex-row items-star justify-center p-5">
+      <div className=" p-4 w-1/2 flex flex-col items-start justify-between">
+        <div>
+          <h2 className="text-white text-4xl">FERNANDO MARÍ REBOLLO</h2>
+          <h2 className="text-white text-2xl">VIDEO Y FOTOGRAFÍA AÉREA</h2>
+        </div>
+        <h2 className="text-white text-2xl">
+          ¿INTERESADO? PONTE EN CONTACTO →
+        </h2>
+      </div>
+      <div className=" p-4 w-1/2 flex flex-col items-end justify-between">
+        <div className="flex flex-col items-end">
+          <h2 className="text-white text-2xl">Privacidad</h2>
+          <h2 className="text-white text-2xl">Aviso Legal</h2>
+          <h2 className="text-white text-2xl">Cookies</h2>
+        </div>
+        <h2 className="text-white text-xl">DESIGN & CODE BY: @MURKHUNTING</h2>
       </div>
     </footer>
   );

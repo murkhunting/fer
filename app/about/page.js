@@ -93,7 +93,7 @@ export default function About() {
             </div>
             <p className="text-[20px]">Peso: 570g</p>
             <p className="text-[20px]">
-              Sensor: 1/2" CMOS Píxeles: 12 MP y 48 MP
+              Sensor: 1/2{'"'} CMOS Píxeles: 12 MP y 48 MP
             </p>
             <p className="text-[20px]">
               Objetivo: Ángulo de visión: 84° Formato equivalente a 35 mm: 24 mm
@@ -126,7 +126,7 @@ export default function About() {
             </div>
             <p className="text-[20px]">Peso: 570g</p>
             <p className="text-[20px]">
-              Sensor: 1/2" CMOS Píxeles: 12 MP y 48 MP
+              Sensor: 1/2{'"'} CMOS Píxeles: 12 MP y 48 MP
             </p>
             <p className="text-[20px]">
               Objetivo: Ángulo de visión: 84° Formato equivalente a 35 mm: 24 mm

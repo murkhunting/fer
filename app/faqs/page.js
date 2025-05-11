@@ -19,7 +19,7 @@ export default function Faqs() {
             FAQs
           </h2>
         </div>
-        <div className="min-h-screen w-full pl-5 pr-20 py-16 flex flex-col">
+        <div className="min-h-screen w-full px-20 py-16 flex flex-col">
           {faqsData.map((faq, index) => (
             <div key={index}>
               <div
