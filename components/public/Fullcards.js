@@ -17,7 +17,7 @@ export default function Fullcard({
       />
       {/* Imagen en color (debajo, aparece en hover) */}
       <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-0">
-        <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl px-10 py-5 bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] z-4">
+        <h2 className="cursor-pointer rounded-md absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl px-10 py-4 bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] z-4">
           {projectName}
         </h2>
         <Image
