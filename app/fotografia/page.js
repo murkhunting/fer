@@ -1,6 +1,7 @@
 import Fullcard from "@/components/public/Fullcards";
 import cardsData from "@/Data/cardsData";
 import FooterSnap from "@/components/public/FooterSnap";
+import ScrollBtn from "@/components/public/ScrollBtn";
 
 export default function Fotografia() {
   return (
@@ -18,6 +19,7 @@ export default function Fotografia() {
             alt={card.alt}
           />
         ))}
+        <ScrollBtn />
         <FooterSnap />
       </div>
     </div>

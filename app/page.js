@@ -1,5 +1,6 @@
 import Homecards from "@/components/public/Homecards";
 import FooterSnap from "@/components/public/FooterSnap";
+import ScrollBtn from "@/components/public/ScrollBtn";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <Homecards />
       <Homecards />
+      <ScrollBtn />
       <FooterSnap />
     </div>
   );

@@ -2,8 +2,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/public/Header";
 import BgVideo from "@/components/public/BgVideo";
-import TopBtn from "@/components/public/TopBtn";
-import ScrollBtn from "@/components/public/ScrollBtn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +37,6 @@ export default function RootLayout({ children }) {
       >
         <Header />
         <BgVideo />
-        <ScrollBtn />
         <main className="flex-grow">{children}</main>
       </body>
     </html>
