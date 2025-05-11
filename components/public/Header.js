@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { PiInstagramLogoLight, PiYoutubeLogoLight } from "react-icons/pi";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,10 +33,10 @@ export default function Header() {
           isMenuOpen ? "translate-y-0" : "-translate-y-[120vh]"
         }`}
       >
-        <div className="h-full flex flex-col items-center justify-center gap-8">
+        <div className="h-full flex flex-col items-center justify-center gap-4">
           <Link
             href="/"
-            className="text-white text-4xl font-light hover:text-gray-300 transition-colors"
+            className="text-white text-4xl font-light hover:text-zinc-300 transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             HOME
@@ -51,12 +52,22 @@ export default function Header() {
             <Link
               key={item}
               href={`/${item.toLowerCase().replace(/í/g, "i")}`}
-              className="text-white text-4xl font-light hover:text-gray-300 transition-colors"
+              className="text-white text-4xl font-light hover:text-zinc-300 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {item}
             </Link>
           ))}
+          <div className="flex fles-row gap-4 justify-center items-center my-5">
+            <PiInstagramLogoLight className="text-white text-4xl hover:text-zinc-300 cursor-pointer" />
+            <PiYoutubeLogoLight className="text-white text-4xl hover:text-zinc-300 cursor-pointer" />
+          </div>
+          <span
+            className="material-symbols-rounded text-white hover:text-zinc-300 cursor-pointer"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            close
+          </span>
         </div>
       </div>
     </>

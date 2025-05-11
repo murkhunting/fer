@@ -29,11 +29,23 @@ body {
    
 }
 
-.material-symbols-rounded {
+.material-symbols-rounded{
   font-family: "Material Symbols Rounded";
   font-weight: 200; /* no hace nada pero lo dejas por claridad */
   font-style: normal;
   font-size: 34px !important; /* o usa tailwind luego para esto */
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 200,   /* Cambia este valor para el weight */
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.material-symbols-rounded2{
+  font-family: "Material Symbols Rounded";
+  font-weight: 200; /* no hace nada pero lo dejas por claridad */
+  font-style: normal;
+  font-size: 44px !important; /* o usa tailwind luego para esto */
   font-variation-settings:
     'FILL' 0,
     'wght' 200,   /* Cambia este valor para el weight */
