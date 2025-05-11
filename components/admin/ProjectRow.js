@@ -32,7 +32,7 @@ export default function ProjectRow({ projectName }) {
           />
         </button>
         <span className="material-symbols-rounded ml-5 text-white hover:text-zinc-400 cursor-pointer">
-          apps
+          drag_indicator
         </span>
       </div>
     </div>
