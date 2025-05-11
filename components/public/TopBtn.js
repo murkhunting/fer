@@ -23,7 +23,7 @@ export default function TopBtn() {
   return (
     <button
       onClick={handleClick}
-      className="fixed right-5 bottom-5 z-40 w-8 h-8 cursor-pointer bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] hover:bg-zinc-800 transition-all duration-300 flex items-center justify-center"
+      className="fixed right-5 bottom-5 z-40 w-8 h-8 cursor-pointer bg-[rgba(247, 247, 247, 0)]/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] hover:bg-zinc-800 transition-all duration-300 flex items-center justify-center"
       aria-label={showUpArrow ? "Volver arriba" : "Desplazarse hacia abajo"}
     >
       {showUpArrow ? (

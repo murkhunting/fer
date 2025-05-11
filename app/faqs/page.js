@@ -15,7 +15,7 @@ export default function Faqs() {
     <>
       <div className="min-h-screen w-screen flex items-start justify-center z-30">
         <div className="fixed top-5 right-20 z-30 gap-3 flex flex-row">
-          <h2 className="fixed h-[48px] px-6 rounded-md text-white bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] top-5 right-20 z-30 flex items-center justify-center">
+          <h2 className="fixed h-[48px] px-6 rounded-md text-white bg-[rgba(247, 247, 247, 0)]/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] top-5 right-20 z-30 flex items-center justify-center">
             FAQs
           </h2>
         </div>
@@ -23,7 +23,7 @@ export default function Faqs() {
           {faqsData.map((faq, index) => (
             <div key={index}>
               <div
-                className="w-full mt-3 rounded-md px-10 py-3 bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] flex flex-row items-center justify-between cursor-pointer"
+                className="w-full mt-3 rounded-md px-10 py-3 bg-[rgba(247, 247, 247, 0)]/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] flex flex-row items-center justify-between cursor-pointer"
                 onClick={() => toggle(index)}
               >
                 <div className="flex flex-row items-center gap-6">
@@ -39,12 +39,12 @@ export default function Faqs() {
                 </span>
               </div>
               {openIndex === index && (
-                <div className="w-full mt-1 rounded-md p-6 bg-white/25 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] flex flex-row items-start gap-10">
+                <div className="w-full mt-1 rounded-md p-6 bg-white/15 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] flex flex-row items-start gap-10">
                   <p className="text-white text-xl z-4 w-[70%]">{faq.answer}</p>
                   <div className="relative w-[30%] h-[200px] rounded-md overflow-hidden">
                     <Image
                       src="https://images.pexels.com/photos/1170064/pexels-photo-1170064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                      alt="Mujer con control remoto de dron"
+                      alt=""
                       fill
                       className="object-cover"
                     />

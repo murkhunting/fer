@@ -8,7 +8,7 @@ export default function AdminContent() {
         <button className=" h-[48px] text-lg font-medium px-7 rounded-md flex items-center justify-center shadow-[0_4px_10px_rgba(0,0,0,0.2)] hover:bg-zinc-800 hover:text-white  bg-gray-300 text-zinc-800">
           + NUEVO PROYECTO
         </button>
-        <div className=" rounded-md flex gap-6 flex-row h-[48px] px-6 text-white bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px]">
+        <div className=" rounded-md flex gap-6 flex-row h-[48px] px-6 text-white bg-[rgba(247, 247, 247, 0)]/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px]">
           <button className="text-md hover:text-zinc-400">TODOS</button>
           <button className="text-md hover:text-zinc-400">VIDEOS</button>
           <button className="text-md hover:text-zinc-400">FOTOS</button>

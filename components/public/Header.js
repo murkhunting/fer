@@ -18,7 +18,7 @@ export default function Header() {
       {/* Header fijo con botón de menú */}
       <header className="fixed top-0 right-0 z-60">
         <div
-          className="relative m-5 p-2 rounded-md bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] transition-all cursor-pointer"
+          className="relative m-5 p-2 rounded-md bg-[rgba(247, 247, 247, 0)]/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] transition-all cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {/* Imagen del ícono de menú */}
@@ -35,7 +35,7 @@ export default function Header() {
 
       {/* Menú desplegable con animación vertical */}
       <div
-        className={`fixed top-0 left-0 w-screen h-screen bg-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] z-50 transition-all duration-700 ease-in-out ${
+        className={`fixed top-0 left-0 w-screen h-screen bg-[rgba(247, 247, 247, 0)]/10 shadow-[0_4px_10px_rgba(0,0,0,0.1)] backdrop-blur-[20px] z-50 transition-all duration-700 ease-in-out ${
           isMenuOpen ? "translate-y-0" : "-translate-y-[120vh]"
         }`}
       >
