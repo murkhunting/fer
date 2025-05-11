@@ -65,11 +65,11 @@ export default function Header() {
             </Link>
           ))}
           <div className="flex fles-row gap-4 justify-center items-center my-5">
-            <PiInstagramLogoLight className="text-white text-4xl hover:text-zinc-300 cursor-pointer" />
-            <PiYoutubeLogoLight className="text-white text-4xl hover:text-zinc-300 cursor-pointer" />
-            <PiWhatsappLogoLight className="text-white text-4xl hover:text-zinc-300 cursor-pointer" />
-            <PiDeviceMobileCameraLight className="text-white text-4xl hover:text-zinc-300 cursor-pointer" />
-            <PiEnvelopeSimpleLight className="text-white text-4xl hover:text-zinc-300 cursor-pointer" />
+            <PiInstagramLogoLight className="text-white text-3xl hover:text-zinc-300 cursor-pointer" />
+            <PiYoutubeLogoLight className="text-white text-3xl hover:text-zinc-300 cursor-pointer" />
+            <PiWhatsappLogoLight className="text-white text-3xl hover:text-zinc-300 cursor-pointer" />
+            <PiDeviceMobileCameraLight className="text-white text-3xl hover:text-zinc-300 cursor-pointer" />
+            <PiEnvelopeSimpleLight className="text-white text-3xl hover:text-zinc-300 cursor-pointer" />
           </div>
           <span
             className="material-symbols-rounded text-white hover:text-zinc-300 cursor-pointer"
