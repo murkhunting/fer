@@ -1,8 +1,14 @@
-// src/models/Project.js
 import mongoose from "mongoose";
+import dbConnect from "@/lib/db";
+
+await dbConnect();
 
 const projectSchema = new mongoose.Schema({
   name: {
+    type: String,
+    required: true,
+  },
+  desc: {
     type: String,
     required: true,
   },
@@ -42,10 +48,6 @@ const projectSchema = new mongoose.Schema({
     required: function () {
       return this.projectType === "photo";
     },
-  },
-  isPublic: {
-    type: Boolean,
-    default: true,
   },
   displayOrder: {
     type: Number,
